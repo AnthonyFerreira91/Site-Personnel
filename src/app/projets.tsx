@@ -19,7 +19,7 @@ export const Projets = () => {
 					imgAlt="Projet 2"
 					title="Body Mass Index Calculator"
 					description="Permet de calculer l'indice de masse corporel"
-					tools={['React', 'Typescript', 'Sass']}
+					tools={['React', 'Typescript', 'CSS']}
 				/>
 				<ProjectCard
 					projetUrl="https://age-calculator-exsmn2jud-matrixfrpro33.vercel.app/"
@@ -27,7 +27,7 @@ export const Projets = () => {
 					imgAlt="Projet 3"
 					title="Age Calculator"
 					description="Permet de calculer le temps écoulé depuis aujourd'hui"
-					tools={['React', 'Typescript', 'Sass']}
+					tools={['HTML', 'CSS', 'Typescript']}
 				/>
 			</div>
 		</div>

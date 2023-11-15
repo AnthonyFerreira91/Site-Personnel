@@ -19,7 +19,7 @@ export const ProjectCard = ({ projetUrl, imgUrl, imgAlt, title, description, too
           <h3 className="text-center font-semibold">{title}</h3>
           <p className="text-center">{description}</p>
         </div>
-        <div className="absolute bottom-0 min-w-[384px] w-[384px] border flex justify-evenly">
+        <div className="absolute bottom-0 min-w-[384px] w-[384px] flex justify-evenly">
           {tools.map((el, index) => {
             return <div className="" key="index">#{el}</div>
           })}
