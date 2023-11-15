@@ -1,7 +1,7 @@
 type toolsType = 
 	'React' | 'NextJs' | 'Typescript' |
 	'Javascript' | 'Sass' | 'Tailwind' |
-	'CSS' | 'HTML';
+	'CSS' | 'HTML' | 'Firebase';
 
 export type ProjectCardProps = {
 	linkUrl: string;

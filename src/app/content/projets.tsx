@@ -15,22 +15,22 @@ export const Projets = () => {
 					gitUrl="https://github.com/Matrixfrpro33/tic-tac-toe-with-hard-ia"
 				/>
 				<ProjectCard
+					title="Marvel Quiz"
+					description="Quiz sur l'univers de marvel"
+					tools={['React', 'CSS', 'Firebase']}
+					imgUrl="/images/Marvel Quiz.png"
+					imgAlt="Projet 2"
+					linkUrl="https://marvel-quiz-73b74.firebaseapp.com/"
+					gitUrl="https://github.com/Matrixfrpro33/Marvel-Quiz"
+				/>
+				<ProjectCard
 					title="Body Mass Index Calculator"
 					description="Permet de calculer l'indice de masse corporel"
 					tools={['React', 'Typescript', 'CSS']}
 					imgUrl="/images/Body Mass Index Calculator.png"
-					imgAlt="Projet 2"
+					imgAlt="Projet 3"
 					linkUrl="https://bmi-calculator-nnyn5t98q-matrixfrpro33.vercel.app/"
 					gitUrl="https://github.com/Matrixfrpro33/Bmi-Calculator"
-				/>
-				<ProjectCard
-					title="Age Calculator"
-					description="Permet de calculer le temps écoulé depuis aujourd'hui"
-					tools={['HTML', 'CSS', 'Typescript']}
-					imgUrl="/images/Age calculator app.png"
-					imgAlt="Projet 3"
-					linkUrl="https://age-calculator-exsmn2jud-matrixfrpro33.vercel.app/"
-					gitUrl="https://github.com/Matrixfrpro33/Age-calculator"
 				/>
 			</div>
 		</div>
