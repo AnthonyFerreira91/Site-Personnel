@@ -20,7 +20,7 @@ export const ContactezMoi = () => {
 			top: 0,
 			behavior: 'smooth',
 		});
-		toast.info("Message envoyé avec succes !", {
+		toast.error("En cours de conception", {
 			position: "top-center",
 			autoClose: 5000,
 			hideProgressBar: false,
