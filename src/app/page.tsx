@@ -4,7 +4,6 @@ import { Projets } from '@/app/content/projets';
 import { ContactezMoi } from '@/app/content/contactez-moi';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 export default function Home() {
   return (
     <main>

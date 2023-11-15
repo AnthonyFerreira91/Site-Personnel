@@ -1,14 +1,4 @@
-import { IconType } from "react-icons";
-
-type skillObjectType = {
-	icon: IconType;
-	nameSkill: string;
-}
-
-type skillsListProps = {
-	skillsObject: skillObjectType[];
-	nameSkillsList: string;
-}
+import { skillsListProps } from "@/types/SkillsListProps";
 
 export const SkillsList = ({ skillsObject, nameSkillsList }: skillsListProps) => {
 	return (

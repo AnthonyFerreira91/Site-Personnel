@@ -1,13 +1,8 @@
 'use client'
+import { ContactezMoiType } from "@/types/ContactezMoiType";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from 'react-toastify';
-
-type ContactezMoiType = {
-	email: string;
-	objet: string;
-	message: string;
-}
 
 export const ContactezMoi = () => {
 	const [submit, setSubmit] = useState<boolean>(false);
