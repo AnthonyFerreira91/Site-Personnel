@@ -1,4 +1,4 @@
-import { Contacts } from "./contacts";
+import { Contacts } from "@/components/contacts";
 import Image from "next/image";
 
 export const Accueil = () => {

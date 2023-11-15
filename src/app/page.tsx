@@ -1,7 +1,7 @@
-import { Accueil } from '@/app/accueil';
-import { Competences } from '@/app/competences';
-import { Projets } from '@/app/projets';
-import { ContactezMoi } from '@/app/contactez-moi';
+import { Accueil } from '@/app/content/accueil';
+import { Competences } from '@/app/content/competences';
+import { Projets } from '@/app/content/projets';
+import { ContactezMoi } from '@/app/content/contactez-moi';
 import 'react-toastify/dist/ReactToastify.css';
 
 

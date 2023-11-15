@@ -21,7 +21,7 @@ export const ProjectCard = ({ projetUrl, imgUrl, imgAlt, title, description, too
         </div>
         <div className="absolute bottom-0 min-w-[384px] w-[384px] flex justify-evenly">
           {tools.map((el, index) => {
-            return <div className="" key="index">#{el}</div>
+            return <div className="" key={index}>#{el}</div>
           })}
         </div>
       </div>
