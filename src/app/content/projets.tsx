@@ -7,7 +7,7 @@ export const Projets = () => {
 			<div className="flex justify-around flex-wrap gap-16">
 				<ProjectCard
 					title="Jeu TicTacToe"
-					description="Création du jeu TicTacToe pour compléter challenge Front-end Mentor"
+					description="Création du jeu TicTacToe pour réaliser le challenge Front-end Mentor"
 					tools={['React', 'Typescript', 'Sass']}
 					imgUrl="/images/Tic Tac Toe.png"
 					imgAlt="Projet 1"
@@ -16,7 +16,7 @@ export const Projets = () => {
 				/>
 				<ProjectCard
 					title="Marvel Quiz"
-					description="Quiz sur l'univers de marvel"
+					description="Quiz sur l'univers de marvel avec 3 niveau de difficulté"
 					tools={['React', 'CSS', 'Firebase']}
 					imgUrl="/images/Marvel Quiz.png"
 					imgAlt="Projet 2"

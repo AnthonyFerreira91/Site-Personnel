@@ -1,4 +1,4 @@
-import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiHtml5 } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiSass, SiCss3, SiHtml5, SiFirebase } from "react-icons/si";
 import { RiCloseLine, RiGithubFill, RiExternalLinkFill } from "react-icons/ri";
 import { ModalCardProps } from "@/types/ModalCardProps";
 import Link from "next/link";
@@ -50,6 +50,9 @@ export const ModalCard = ({ title, description, tools, linkUrl, gitUrl, closeMod
 										break;
 									case "HTML":
 										langageIcon = <SiHtml5 size="18px" />;
+										break;
+									case "Firebase":
+										langageIcon = <SiFirebase size="18px" />;
 										break;
 									default:
 										break;
