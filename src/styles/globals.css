@@ -21,9 +21,9 @@
 }
 
 .text-dark {
-	@apply dark:text-[#1c1b22];
+	@apply dark:text-[#1d2635];
 }
 
 .bg-dark {
-	@apply dark:bg-[#1c1b22];
+	@apply dark:bg-[#1d2635];
 }

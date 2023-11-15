@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   return (
-    <main>
+    <main className='bg-dark'>
       <div className="p-28 pb-20 space-y-16">
         <Accueil />
         <hr className='border-gray-300' />
