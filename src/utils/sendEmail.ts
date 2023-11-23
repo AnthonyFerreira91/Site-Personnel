@@ -5,13 +5,14 @@ import { ZodError } from "zod";
 
 export const sendEmail = async (formData: FormData, reset: any) => {
 	try {
-		const { email, objet, message } = ContactezMoiSchema.parse({
+		const { nom, email, objet, message } = ContactezMoiSchema.parse({
+			nom: formData.get('nom'),
 			email: formData.get('email'),
 			objet: formData.get('objet'),
 			message: formData.get('message')
 		});
 
-		const sendEmail = await sendEmailAction({ email, objet, message });
+		const sendEmail = await sendEmailAction({ nom, email, objet, message });
 
 		reset();
 		window.scrollTo({

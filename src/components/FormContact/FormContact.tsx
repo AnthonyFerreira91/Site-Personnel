@@ -10,6 +10,21 @@ export const FormContact = () => {
 	return (
 		<form className="flex flex-col gap-1" action={(formData) => sendEmail(formData, reset)}>
 			<div className="flex flex-col">
+				<label htmlFor="nom" className="text-dark">Nom :</label>
+				<div className="bg-primary p-0.5 rounded-[8px]">
+					<input
+						type="nom"
+						id="nom"
+						autoComplete="on"
+						className="dark:bg-white text-dark rounded-md w-full h-full pl-2 focus:outline-none"
+						{...register("nom", {
+							required: { value: true, message: "Le nom ne peux pas être vide" },
+						})}
+					/>
+				</div>
+				{errors.email ? <span className="text-red-600">{errors.email.message}</span> : <span className="text-transparent">No error</span>}
+			</div>
+			<div className="flex flex-col">
 				<label htmlFor="email" className="text-dark">Email :</label>
 				<div className="bg-primary p-0.5 rounded-[8px]">
 					<input
