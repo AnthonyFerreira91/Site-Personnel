@@ -9,7 +9,7 @@ export default async function sendEmailAction({nom, email, objet, message}: Cont
 			to: "anthonyferreiraminard@gmail.com",
 			subject: objet,
 			html: `<h1>Message Site Perso: fa-dev.fr</h1>
-					<h3>From: ${email}</h3>
+					<h3>From: ${nom} <${email}></h3>
 					<h4>Objet: ${objet}</h4>
 					<p>${message}</p>
 			`
