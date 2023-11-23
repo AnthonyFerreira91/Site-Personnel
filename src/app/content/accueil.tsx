@@ -1,5 +1,5 @@
-import { Contacts } from "@/components/contacts";
-import Image from "next/image";
+import { Avatar } from "@/components/Avatar/Avatar";
+import { Contacts } from "@/components/Contacts/Contacts";
 
 export const Accueil = () => {
 	return (
@@ -9,11 +9,7 @@ export const Accueil = () => {
 				<h2 className="text-4xl mb-2.5">Développeur Front-end React / NextJs</h2>
 				<Contacts />
 			</div>
-			<div className="w-[200px] h-[200px]">
-				<div className="bg-primary p-[3px] rounded-full">
-					<Image src="/images/Photo Profil.jpg" alt="Ma photo du portfolio" width={200} height={200} className="rounded-full ml-[0.2px] mb-[0.2px]" />
-				</div>
-			</div>
+			<Avatar />
 		</div>
 	)
 }

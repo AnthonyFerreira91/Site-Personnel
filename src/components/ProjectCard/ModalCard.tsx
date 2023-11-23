@@ -14,6 +14,32 @@ export const ModalCard = ({ title, description, tools, linkUrl, gitUrl, closeMod
 		}
 	}, []);
 
+	const langageIcon = (langage: string) => {
+		const sizeLogo = "18px";
+		switch (langage) {
+			case "React":
+				return <SiReact size={sizeLogo} />;
+			case "NextJs":
+				return <SiNextdotjs size={sizeLogo} />;
+			case "Typescript":
+				return <SiTypescript size={sizeLogo} />;
+			case "Javascript":
+				return <SiJavascript size={sizeLogo} />;
+			case "Sass":
+				return <SiSass size={sizeLogo} />;
+			case "Tailwind":
+				return <SiTailwindcss size={sizeLogo} />;
+			case "CSS":
+				return <SiCss3 size={sizeLogo} />;
+			case "HTML":
+				return <SiHtml5 size={sizeLogo} />;
+			case "Firebase":
+				return <SiFirebase size={sizeLogo} />;
+			default:
+				break;
+		}
+	}
+
 	return (
 		<>
 			<div onClick={closeModal} className="fixed inset-0 bg-slate-800/75" />
@@ -25,39 +51,8 @@ export const ModalCard = ({ title, description, tools, linkUrl, gitUrl, closeMod
 						<div className="flex items-center gap-2 mb-5">
 							<h3>Language :</h3>
 							{tools.map((langage, index) => {
-								let langageIcon;
-								switch (langage) {
-									case "React":
-										langageIcon = <SiReact size="18px" />;
-										break;
-									case "NextJs":
-										langageIcon = <SiNextdotjs size="18px" />;
-										break;
-									case "Typescript":
-										langageIcon = <SiTypescript size="18px" />;
-										break;
-									case "Javascript":
-										langageIcon = <SiJavascript size="18px" />;
-										break;
-									case "Sass":
-										langageIcon = <SiSass size="18px" />;
-										break;
-									case "Tailwind":
-										langageIcon = <SiTailwindcss size="18px" />;
-										break;
-									case "CSS":
-										langageIcon = <SiCss3 size="18px" />;
-										break;
-									case "HTML":
-										langageIcon = <SiHtml5 size="18px" />;
-										break;
-									case "Firebase":
-										langageIcon = <SiFirebase size="18px" />;
-										break;
-									default:
-										break;
-								}
-								return <div className="" key={index}>{langageIcon}</div>
+								const icon = langageIcon(langage);
+								return <div key={index}>{icon}</div>
 							})}
 						</div>
 					</div>
@@ -69,7 +64,12 @@ export const ModalCard = ({ title, description, tools, linkUrl, gitUrl, closeMod
 							<RiGithubFill size="24px" className='m-auto' />
 						</Link>
 					</div>
-					<button className="absolute right-1 top-1" onClick={closeModal}><RiCloseLine size="20px" className="hover:text-blue-500 dark:text-white dark:hover:text-blue-400 transition-colors duration-200" /></button>
+					<button
+						className="absolute right-1 top-1"
+						onClick={closeModal}
+					>
+						<RiCloseLine size="20px" className="hover:text-blue-500 dark:text-white dark:hover:text-blue-400 transition-colors duration-200" />
+					</button>
 				</div>
 			</div>
 		</>

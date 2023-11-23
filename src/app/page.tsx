@@ -4,7 +4,7 @@ import { Projets } from '@/app/content/projets';
 import { ContactezMoi } from '@/app/content/contactez-moi';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className='bg-dark'>
       <div className="p-28 pb-20 space-y-16">

@@ -1,5 +1,5 @@
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSass, SiFigma, SiGithub, SiFirebase, SiJest } from 'react-icons/si';
-import { SkillsList } from '@/components/SkillsList';
+import { SkillsList } from '@/components/SkillsList/SkillsList';
 
 export const Competences = () => {
 	return (
