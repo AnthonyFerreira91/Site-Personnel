@@ -16,6 +16,10 @@
 	@apply bg-gradient-to-b from-sky-300 to-blue-600;
 }
 
+.bg-primary-dark {
+	@apply dark:bg-gradient-to-b dark:from-sky-300 dark:to-blue-600;
+}
+
 .bg-primary-hover {
 	@apply hover:bg-gradient-to-b hover:from-sky-300 hover:to-blue-600;
 }
