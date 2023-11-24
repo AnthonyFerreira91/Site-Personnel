@@ -7,7 +7,7 @@ export const Projets = () => {
 			<div className="flex justify-around flex-wrap gap-16">
 				<ProjectCard
 					title="Jeu TicTacToe"
-					description="Création du jeu TicTacToe pour réaliser le challenge Front-end Mentor"
+					description="Jeu TicTacToe pour réaliser le challenge Front-end Mentor"
 					tools={['React', 'Typescript', 'Sass']}
 					imgUrl="/images/Tic Tac Toe.png"
 					imgAlt="Projet 1"

@@ -19,7 +19,7 @@ export const ProjectCard = ({ linkUrl, gitUrl, imgUrl, imgAlt, title, descriptio
           </div>
         </div>
       </button>
-      {showModal && createPortal(<ModalCard title={title} description={description} tools={tools} linkUrl={linkUrl} gitUrl={gitUrl} closeModal={() => setShowModal(false)} />, document.body)}
+      {showModal && createPortal(<ModalCard title={title} description={description} tools={tools} imgUrl={imgUrl} imgAlt={imgAlt} linkUrl={linkUrl} gitUrl={gitUrl} closeModal={() => setShowModal(false)} />, document.body)}
     </div>
   )
 }
